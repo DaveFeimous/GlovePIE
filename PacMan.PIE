@@ -1,0 +1,28 @@
+﻿/* Controllers:
+**  Wii Remote (Plus)
+**  Wii Remote (Plus) + Nunchuk
+**  Wii Remote (Plus) + Classic Controller (Pro)
+**
+** NOTE: Uncomment/Comment accordingly based on Classic Controller type.*/
+
+Key.Left = Wiimote.Up or Classic.Left
+Key.Up = Wiimote.Right or Classic.Up
+Key.Right = Wiimote.Down or Classic.Right
+Key.Down = Wiimote.Left or Classic.Down
+Keyboard.ArrowKeys = Nunchuk.Joy or Classic.LeftStick or Classic.RightStick
+
+Key.Enter = Wiimote.Two or Nunchuk.Z or Classic.a
+Key.BackSpace = Wiimote.One or Nunchuk.C or Classic.b
+
+/* Classic Controller Pro */
+Key.Enter = Classic.ZL or Classic.ZR
+Key.BackSpace = Classic.L or Classic.R
+
+/* Classic Controller */
+//Key.Enter = Classic.L or Classic.R
+//Key.BackSpace = Classic.ZL or Classic.ZR
+
+Key.Escape = Wiimote.Home or Classic.Home
+Key.P = Wiimote.A or Classic.x or Classic.y // Leaderboards
+Key.O = Wiimote.Plus or Classic.Plus        // Demo
+Key.K = Wiimote.Minus or Classic.Minus      // Change Color

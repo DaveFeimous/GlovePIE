@@ -1,0 +1,30 @@
+﻿/* Controllers:
+**  Wii Remote (Plus)           (REQUIRED for Longest Night)
+**  Wii Remote (Plus) + Nunchuk (REQUIRED for Lost Constellation)
+**
+** NOTE: Pointer usage is dependent on "handed-ness" of the computer.
+**       Uncomment/Comment accordingly. */
+
+Wiimote.Led1 = true
+GlovePIE.FrameRate = 100hz
+
+if Wiimote.PointerVisible but not var.PointerBump then
+  mouse.x = Wiimote.PointerX
+  mouse.y = Wiimote.PointerY
+end if
+
+mouse.RightButton = Wiimote.B // LEFT-HANDED
+//mouse.LeftButton = Wiimote.B  // RIGHT-HANDED
+Key.Space = Wiimote.A
+
+Key.Left = Wiimote.Left
+Key.Right = Wiimote.Right
+
+/************** Lost Constellation ONLY **************/
+WASD = Nunchuk.Joy
+mouse.LeftButton = Nunchuk.Z // LEFT-HANDED
+//mouse.RightButton = Nunchuk.Z // RIGHT-HANDED
+/************* End of Lost Constellation *************/
+
+Key.Escape = Wiimote.Home
+

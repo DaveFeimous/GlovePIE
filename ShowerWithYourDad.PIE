@@ -1,0 +1,33 @@
+﻿/* Controllers:
+**  Wii Remote (Plus) (required)
+**  Wii Remote (Plus) + Nunchuk
+**  Wii Remote (Plus) + Classic Controller (Pro)
+**
+** NOTE: Pointer usage is dependent on "handed-ness" of the computer.
+**       Uncomment/Comment accordingly. */
+
+/* Menus, "Dad Divisions", "Soapico" */
+Wiimote.Led1 = true
+GlovePIE.FrameRate = 100hz
+if Wiimote.PointerVisible but not var.PointerBump then
+  mouse.x = Wiimote.PointerX
+  mouse.y = Wiimote.PointerY
+end if
+mouse.RightButton = Wiimote.A or Wiimote.B // LEFT-HANDED
+//mouse.LeftButton = Wiimote.A or Wiimote.B  // RIGHT-HANDED
+Key.Escape = Wiimote.Home or Classic.Home
+
+/* Main Gameplay: "Endurodad", "Dadathlon" */
+Key.Up = Wiimote.Right or Classic.Up
+Key.Left = Wiimote.Up or Classic.Left
+Key.Right = Wiimote.Down or Classic.Right
+Key.Down = Wiimote.Left or Classic.Down
+Key.Space = Wiimote.Two or Classic.a
+
+/* "Dad Divisions", "Dad with the Iron Shower" */
+WASD = Nunchuk.Joy or Classic.LeftStick or Classic.RightStick
+Keyboard.ArrowKeys = Nunchuk.Joy
+Key.Up = Nunchuk.Z or Classic.ZL or Classic.ZR or Classic.L or Classic.R
+
+/* "Inglorious Bathdads" */
+Key.Right = Wiimote.Two or Classic.a

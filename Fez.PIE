@@ -1,0 +1,34 @@
+﻿/* Controllers:
+**  Wii Remote (Plus) + Classic Controller (Pro) (REQUIRED)
+**
+** NOTE: Uncomment/Comment accordingly based on Classic Controller type.*/
+
+Key.Left = Classic.Left
+Key.Right = Classic.Right
+Key.Up = Classic.Up
+Key.Down = Classic.Down
+
+Key.Enter = Classic.Plus  // World-Map
+Key.Tab = Classic.Minus   // Inventory
+Key.Escape = Classic.Home // Pause
+
+Key.Space = Classic.b       // Jump
+Key.LeftControl = Classic.y // Action
+Key.LeftShift = Classic.a   // Talk/Cancel
+
+/* Classic Controller Pro */
+Key.J = Classic.ZL // Rotate Left
+Key.K = Classic.ZR // Rotate Right
+Key.E = Classic.R  // Zoom in (Map)
+Key.Q = Classic.L  // Zoom out (Map)
+
+/* Classic Controller */
+//Key.J = Classic.L  // Rotate Left
+//Key.K = Classic.R  // Rotate Right
+//Key.Q = Classic.ZL // Zoom out (Map)
+//Key.E = Classic.ZR // Zoom in (Map)
+
+WASD = Classic.RightStick          // Look Around
+Key.L = Classic.x                  // Reset Look
+Key.Semicolon = Classic.LeftStickY // First-Person View
+

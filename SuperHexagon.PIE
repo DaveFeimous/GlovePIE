@@ -1,0 +1,21 @@
+﻿/* Controllers:
+**  Wii Remote (Plus)
+**  Wii Remote (Plus) + Classic Controller (Pro) */
+
+/* Wii Remote (Plus) */
+Key.Up = Wiimote.Right
+Key.Down = Wiimote.Left
+Key.Left = Wiimote.Up
+Key.Right = Wiimote.Down
+Key.Space = Wiimote.Two or Wiimote.Plus
+Key.Escape = Wiimote.One or Wiimote.Home
+Key.Tab = Wiimote.A or Wiimote.Minus
+
+/* Classic Controller (Pro) */
+Key.Up = Classic.Up
+Key.Down = Classic.Down
+Key.Left = Classic.Left or Classic.L or Classic.ZL
+Key.Right = Classic.Right or Classic.R or Classic.ZR
+Key.Space = Classic.a or Classic.Plus
+Key.Escape = Classic.b or Classic.Home
+Key.Tab = Classic.Minus
